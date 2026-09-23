@@ -1,4 +1,23 @@
-# SL Academy
+<p align="center">
+	<img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/1%20Full%20Color.svg" width="360" alt="Laravel logo">
+</p>
+
+<p align="center">
+	<img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" width="92" alt="Bootstrap logo">
+</p>
+
+<h1 align="center">SL Academy</h1>
+
+<p align="center">
+	<strong>A modern institute management system for every grade, role, and learning journey.</strong>
+</p>
+
+<p align="center">
+	<img src="https://img.shields.io/badge/Laravel-12-FF2D20?logo=laravel&logoColor=white" alt="Laravel 12">
+	<img src="https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php&logoColor=white" alt="PHP 8.2 or later">
+	<img src="https://img.shields.io/badge/Tailwind_CSS-UI-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
+	<img src="https://img.shields.io/badge/Bootstrap-reference-7952B3?logo=bootstrap&logoColor=white" alt="Bootstrap reference">
+</p>
 
 SL Academy is a Laravel-based institute management system for managing an online school experience from Grade 1 through Grade 11. It provides public information and course pages alongside authenticated dashboards for administrators, teachers, students, and registrars.
 
@@ -21,6 +40,10 @@ SL Academy is a Laravel-based institute management system for managing an online
 - Blade
 - Tailwind CSS
 - Vite
+
+<p align="center">
+	<img src="https://skillicons.dev/icons?i=laravel,php,bootstrap,tailwind,vite" alt="Laravel, PHP, Bootstrap, Tailwind CSS, and Vite">
+</p>
 
 ## Getting Started
 
