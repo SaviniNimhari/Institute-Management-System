@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Classes & Subjects | SL Academy</title><link rel="icon" type="image/png" href="{{ asset('images/logo-01.png') }}">@vite(['resources/css/app.css', 'resources/js/app.js'])</head>
+<body>
+@include('partials.public-nav')
+<main>
+<section class="section" style="padding-bottom:55px"><div class="container"><span class="eyebrow">SL Academy / Classes & subjects</span><h1 class="display">Every grade.<br><em>Every possibility.</em></h1><p class="lede">A complete learning journey from Primary 1 through Grade 11, with every core subject in one welcoming place.</p></div></section>
+<section class="section grade-section" style="padding-top:35px"><div class="container"><div class="catalog-filter" role="group" aria-label="Filter classes"><span class="eyebrow">Filter classes</span><button class="catalog-filter__button is-active" type="button" data-grade-filter="all">All grades</button><button class="catalog-filter__button" type="button" data-grade-filter="primary">Primary 1—5</button><button class="catalog-filter__button" type="button" data-grade-filter="secondary">Secondary 6—11</button></div><div class="section-heading"><div><span class="eyebrow">01 / Primary school</span><h2>Grades <em>1—5.</em></h2></div><p>Strong foundations, curious minds, and joyful first steps across every essential subject.</p></div><div class="grade-grid">
+@foreach ([['Grade 1','First steps','Sinhala','Tamil','English','Environmental Studies','Mathematics'],['Grade 2','Growing ideas','Sinhala','Tamil','English','Environmental Studies','Mathematics'],['Grade 3','Making connections','Sinhala','Tamil','English','Environmental Studies','Mathematics'],['Grade 4','Finding confidence','Sinhala','Tamil','English','Environmental Studies','Mathematics'],['Grade 5','Ready for more','Sinhala','Tamil','English','Environmental Studies','Mathematics']] as $grade)
+<article class="grade-card" data-grade-level="primary"><div class="grade-card__head"><span class="grade-card__number">{{ $loop->iteration }}</span><div><span class="course-card__tag">{{ $grade[1] }}</span><h3>{{ $grade[0] }}</h3></div></div><div class="subject-list">@foreach (array_slice($grade, 2) as $subject)<span>{{ $subject }}</span>@endforeach</div><a class="grade-card__link" href="{{ url('form') }}">Enquire about {{ $grade[0] }} <span>↗</span></a></article>
+@endforeach
+</div></div></section>
+<section class="band section grade-section"><div class="container"><div class="section-heading"><div><span class="eyebrow">02 / Secondary school</span><h2>Grades <em>6—11.</em></h2></div><p>Deeper thinking, wider choices, and a clear path toward O-Level success and beyond.</p></div><div class="grade-grid">
+@foreach ([['Grade 6','New perspectives'],['Grade 7','Building fluency'],['Grade 8','Thinking critically'],['Grade 9','Choosing direction'],['Grade 10','O-Level preparation'],['Grade 11','Ready for what is next']] as $grade)
+<article class="grade-card" data-grade-level="secondary"><div class="grade-card__head"><span class="grade-card__number">{{ $loop->iteration + 5 }}</span><div><span class="course-card__tag">{{ $grade[1] }}</span><h3>{{ $grade[0] }}</h3></div></div><div class="subject-list"><span>Sinhala / Tamil</span><span>English</span><span>Mathematics</span><span>Science</span><span>History</span><span>Geography</span><span>Civic Education</span><span>Religion</span><span>ICT</span><span>Health & Physical Education</span><span>Aesthetic Studies</span>@if ($loop->iteration >= 5)<span>Business & Accounting</span>@endif</div><a class="grade-card__link" href="{{ url('form') }}">Enquire about {{ $grade[0] }} <span>↗</span></a></article>
+@endforeach
+</div></div></section>
+<section class="section"><div class="container"><div class="section-heading"><div><span class="eyebrow">03 / Subject studio</span><h2>Learn the subjects that <em>open doors.</em></h2></div><p>Our subject studios pair clear teaching with projects, practice, and the confidence to ask better questions.</p></div><div class="subject-cloud">@foreach (['Sinhala','Tamil','English','Mathematics','Science','Environmental Studies','History','Geography','Civic Education','Religion','ICT','Business & Accounting','Health & Physical Education','Aesthetic Studies','Art','Music'] as $subject)<span>{{ $subject }}</span>@endforeach</div></div></section>
+</main>
+@include('partials.public-footer')
+</body>
+</html>
