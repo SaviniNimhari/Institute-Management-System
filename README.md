@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/1%20Full%20Color.svg" width="360" alt="Laravel logo">
+	<a href="https://laravel.com"><img src="https://laravel.com/img/logomark.min.svg" width="120" alt="Laravel logo"></a>
 </p>
 
 <p align="center">
